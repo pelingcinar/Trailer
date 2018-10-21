@@ -3,6 +3,7 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+android:background="@android:color/background_dark"
 android:orientation="vertical"
 tools:context=".Fragments.TrailerFragment">
 
@@ -11,11 +12,22 @@ tools:context=".Fragments.TrailerFragment">
     android:id="@+id/txtMovieName"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/hello_blank_fragment" />
+    android:layout_centerHorizontal="true"
+    android:layout_marginStart="12dp"
+    android:layout_marginLeft="12dp"
+    android:gravity="left"
+    android:text="Movie Name"
+    android:background="@android:color/background_dark"
+    android:textColor="@android:color/white"
+    android:textSize="24sp"
+    android:textStyle="bold"/>
 
 <VideoView
     android:id="@+id/videoView"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"/>
 
 </RelativeLayout>
